@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Enjoy Your faviourite Music</title>
+    <link rel="icon" type="image/c-icon" href="Spotify Clone Icon.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Moved images out from folder -->
+    <nav>
+        <ul>
+            <li class="brand-logo" id="logo"><img src="Spotify_App_Logo.svg.png" alt="Spotify"> <i>Spotify</i>
+            </li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li style="margin-left: 67vw;"><button class="btn" id="clientId" style="background-color: green;" onclick="promptId();">ClientID</button> </li>
+            <li><button class="btn" id="clientSecret" style="background-color: green;" onclick="promptSecret();">Client Secret</button> </li>
+        </ul>
+    </nav>
+    <div class="container" id="box">
+        <div class="choosecategory">
+            <div class='cate'>Choose Categories</div>
+
+            <div class="category">
+                <button class='btn allBlack cbtn' id='bollywood'>Bollywood</button>
+                <button class='btn allBlack cbtn' id='bollywood2'>Bollywood2</button>
+                <button class='btn allBlack cbtn' id='bollywood3'>Bollywood3</button>
+                <button class='btn allBlack cbtn' id='classical'>Classical</button>
+                <button class='btn allBlack cbtn' id='marathi'>Marathi</button>
+            </div> 
+            <div class="category">
+                <button class='btn allBlack cbtn' id='punjabi'>Punjabi</button>
+                <button class='btn allBlack cbtn' id='honeysingh'>Honey Singh</button>
+                <button class='btn allBlack cbtn' id='badshah'>Badshah</button>
+                <button class='btn allBlack cbtn' id='nehakakkar'>Neha Kakkar</button>
+                <button class='btn allBlack cbtn' id='top50'>Top 50</button>
+            </div>
+        </div>
+        <div class="music-list" id="musicList">
+            <h2 style="display: block;">Enjoy your faviourite song's Here <sub>For Free</sub></h2>
+            <div class='both'>
+                <div class="songContainer">
+                </div>
+              
+                <div > <img src='Spotify Clone Icon.png'alt="Image Preview" class="pImage"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="play-music" id="playMusic">
+        <input type="range" name="range" id="progressBar" min='0' max='100' value="0">
+
+        <div class="font bfont">
+            <i class="fa backward"></i>
+            <i class="fa play" id="playPauseBottom"></i>
+            <i class="fa forward"></i>
+        </div>
+        <div class="songGif">
+            <img src="44zG.gif" width="50px" height="33px" id="gif"><span id="playing"></span>
+        </div>
+        <div class="timestampB">
+            00:30
+        </div>
+    </div>
+
+
+    <div class="footer">
+        &copy;
+        Copyright 2021 Spotify
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
